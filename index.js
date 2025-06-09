@@ -49,9 +49,13 @@
 
 // const companyInfo = getCompanyInfo(company);
 // console.log(companyInfo);
+// const name = "Yashika";
+const age = 20;
 
 const greet = (name) => {
-  console.log("Hello " + name);
+  console.log('Hello' + name);
+  console.log('Welcome' + age);
+  console.log('Welcome1' + name);
 };
 
-greet("Yashika");
+greet('Yashika');
