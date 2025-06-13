@@ -564,3 +564,7 @@ git commit -m "Fixed linting issues"`
     `npm run lint:fix-staged`
 - **Solution**:
   - lint-staged ensures only staged files are processed, keeping performance fast.
+
+# ESLint Folder
+
+This folder contains configuration for ESLint in the project.
