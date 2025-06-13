@@ -318,7 +318,7 @@ npx husky run pre-commit
 
 1.  **Retry the Installation**:
     Run the installation command with --legacy-peer-deps:
-        npm install --save-dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks --legacy-peer-deps
+    npm install --save-dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks --legacy-peer-deps
 
         1. **Install Husky and lint-staged**:
             - Install tools for Git hooks and staged file linting:
@@ -475,11 +475,11 @@ npm install --legacy-peer-deps`
    - Create/edit a file (e.g., src/App.jsx) with an error (e.g., var x = 1;).
    - Stage and commit:
      `git add src/App.jsx
-  git commit -m "Test commit"`
+git commit -m "Test commit"`
    - Fix errors:
      `npm run lint:fix-staged
-  git add src/App.jsx
-  git commit -m "Test commit after fix"`
+git add src/App.jsx
+git commit -m "Test commit after fix"`
 
 - **Check Staged Files Only** (already handled by git commit):
   `npx lint-staged`
@@ -500,15 +500,15 @@ Here are common scenarios team members might encounter, with commands and soluti
 - **Solution**:
   - Review errors and fix manually or run:
     `npx eslint src/MyComponent.jsx --fix
-  npx prettier --write src/MyComponent.jsx`
+npx prettier --write src/MyComponent.jsx`
 
 ### Scenario 2: Team Member’s Commit Fails
 
 - **Situation**: git commit fails due to ESLint errors.
 - **Command**:
   `npm run lint:fix-staged
-  git add .
-  git commit -m "Fixed linting issues"`
+git add .
+git commit -m "Fixed linting issues"`
 - **Solution**:
   - If errors persist (non-fixable), review ESLint output and fix manually.
   - Use npx eslint <file> to isolate issues.
@@ -539,15 +539,15 @@ Here are common scenarios team members might encounter, with commands and soluti
     CollapseWrapRun
     Copy
     `npx eslint src/MyComponent.jsx --fix
-  npx prettier --write src/MyComponent.jsx`
+npx prettier --write src/MyComponent.jsx`
 
 ### Scenario 2: Team Member’s Commit Fails
 
 - **Situation**: git commit fails due to ESLint errors.
 - **Command**:
   `npm run lint:fix-staged
-  git add .
-  git commit -m "Fixed linting issues"`
+git add .
+git commit -m "Fixed linting issues"`
 - **Solution**:
   - If errors persist (non-fixable), review ESLint output and fix manually.
   - Use npx eslint <file> to isolate issues.
